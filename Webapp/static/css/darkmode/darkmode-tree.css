@@ -1,0 +1,180 @@
+:root {
+  --main-font-colour: white;
+}
+
+.tree {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+
+  width: 100%;
+  text-align: left;
+  font-size: 1vw;
+}
+
+.tree *,
+.tree *::after,
+.tree *::before {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tree ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+}
+
+.tree ul:after {
+  transition: border-top 0.3s;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: .5em;
+  width: 1em;
+  border-top: 1px solid var(--main-font-colour);
+}
+
+
+
+.tree li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding: .5em 1em .5em 3em;
+
+}
+
+.tree li:before {
+  transition: border-left 0.3s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.5em;
+  height: 100%;
+  border-left: 1px solid var(--main-font-colour);
+}
+
+.tree li:after {
+  transition: border-top 0.3s;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 1.5em;
+  width: 1em;
+  border-top: 1px solid var(--main-font-colour);
+}
+
+.tree li:first-child:before {
+  top: 50%;
+  height: 50%;
+}
+
+.tree li:last-child:before {
+  bottom: 50%;
+  height: 50%;
+}
+
+.tree li:only-child:before {
+  display: none;
+}
+
+.tree div:hover  + ul > li > div{
+  transform: scale(1.1);
+  border-top: #FF3886 3px;
+}
+
+.tree div:hover + ul > li:before {
+  transition: border-left 0.25s;
+  border-left: 3px solid #FF3886;
+}
+
+.tree div:hover + ul > li:after {
+  transition: border-top 0.25s;
+  border-top: 3px solid #FF3886;
+}
+.tree div:hover + ul:after {
+  transition: border-top 0.25s;
+  border-top: 3px solid #FF3886;
+}
+
+
+
+
+.divbg {
+	background-color: rgb(108,66,240);
+	max-height: 800px;
+}
+
+
+.inline {
+  display: inline-block;
+}
+
+#page_content {
+  white-space: nowrap;
+}
+
+.born {
+  font-weight: bold;
+  font-size: 0.7em;
+  color: #707275;
+}
+
+.tree {
+  color: black;
+}
+
+#family_tree {
+  position: absolute;
+  z-index:-1;
+  overflow-y: hidden;
+  overflow-x: auto;
+  min-width: 2000px;
+}
+
+#generationSelector {
+  padding: .375rem 2.25rem .375rem .75rem;
+
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.55);
+  border-width: 1px;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+  display:inline;
+}
+
+.container {
+    margin-top:60px;
+    z-index:-1;
+    position: relative;
+    min-width: 1000px;
+}
+
+.treeIndiBG {
+  background-color: white;
+  border-radius: 3px;
+  transition: transform 0.4s;
+  padding: 5px 10px;
+
+}
+
+.treeIndiBG:hover {
+  transition: box-shadow 0.5s, transform 0.4s;
+
+  box-shadow: 2px 2px #383838;
+  transform: scale(1.05);
+}
+
+
+
+
+

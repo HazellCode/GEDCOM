@@ -1,0 +1,20 @@
+{%  extends 'base.html' %}
+
+{%  block content %}
+    <div class="profile-block">
+        <div class="upload-container">
+            <h1>Upload File</h1>
+            <h4>To use this service upload a "GEDCOM" complient file in the UTF-8 text format</h4>
+            <div class="form-group">
+                <input type="file" class="form-control" id="fileinput" accept=".ged,.gedcom,.txt">
+            </div>
+
+            <button type="button" id="submit-file-button" class="btn btn-primary">Continue</button>
+
+        </div>
+    </div>
+
+
+    <script src="../static/js/start/start.js"></script>
+{% include 'footer.html' %}
+{% endblock %}

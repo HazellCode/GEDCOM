@@ -1,0 +1,40 @@
+#container {
+    margin-top: 70px;
+    z-index:-1;
+    position: relative;
+    color: white;
+
+}
+
+.errorDiv {
+    background-color: gray;
+    text-align: center;
+}
+
+.errorBlock {
+    margin: 150px 30%;
+
+    text-align: center;
+
+}
+
+.row {
+    margin-bottom: 40px;
+}
+hr.divider {
+    margin-bottom: 40px;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 425px) {
+    .errorBlock{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 150px auto;
+        max-width: 320px;
+    }
+}
+

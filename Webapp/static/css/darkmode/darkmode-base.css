@@ -1,0 +1,167 @@
+#match-list {
+    position: absolute;
+
+    max-height:  210px;
+
+    overflow: auto;
+    font-size: 1em;
+    z-index:2;
+
+}
+
+h4.cardmod {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+div.custom-popover {
+  --bs-popover-max-width: 400px;
+    --bs-popover-border-color: rgba(255, 255, 255, 0.17);
+    --bs-popover-border-width: 3px;
+  --bs-popover-body-padding-x: 2rem;
+  --bs-popover-body-padding-y: .5rem;
+    --bs-popover-zindex: 1;
+    --bs-popover-header-bg: transparent;
+    --bs-popover-header-color: white;
+    --bs-popover-header-font-size: 20px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+
+    -webkit-backdrop-filter: blur(30px);
+  color: black;
+
+}
+
+
+.popovercard {
+  text-align: left;
+    color: white;
+
+
+}
+.popovertext {
+
+  display: block;
+  font-weight: normal;
+  color: white;
+}
+
+.popoverparent {
+  color: #888888;
+  list-style-type: '- ';
+
+}
+
+.popover-text-bold {
+  font-weight: bold;
+}
+
+.popover-text-title {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.popover-text-lower {
+  font-size: 20px;
+}
+
+.popoverlink {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+
+
+}
+
+#indi-search {
+    width: 100%;
+}
+
+.darkmodeswitch {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+
+.body {
+    background-color: rgb(41,41,41);
+}
+.dmsel {
+    background-color: rgb(41,41,41);
+}
+.container-fluid, .navbar-brand,.nav-link,.nav-link.active{
+    color: white;
+}
+
+#page_content{
+    color: white;
+}
+
+
+
+.li {
+    background-color: rgb(70,70,70);
+    color: white;
+}
+.highlighted {
+    background-color: rgb(108,66,240);
+}
+#dmodeswitch:before {
+  content: "Light Mode";
+  display: inline;
+}
+
+.base-nav-custom {
+    background: linear-gradient(174deg, #e64398, #3feee6, #a1c3d1, #f172a1, #b39bc8);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: navbarGadient 25s ease infinite;
+    -moz-animation: navbarGadient 25s ease infinite;
+    -o-animation: navbarGadient 25s ease infinite;
+    animation: navbarGadient 25s ease infinite;
+}
+
+@-webkit-keyframes navbarGadient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-moz-keyframes navbarGadient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@-o-keyframes navbarGadient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+@keyframes navbarGadient {
+    0%{background-position:2% 0%}
+    50%{background-position:99% 100%}
+    100%{background-position:2% 0%}
+}
+
+#dmodeswitch{
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.55);
+    border-width: 1px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: bold;
+
+}
+#baseNavbar {
+    top:0;
+
+    position: fixed;
+    width:100%;
+    z-index:2;
+}
+
+.nav_design_rounded {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+

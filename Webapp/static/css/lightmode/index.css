@@ -1,0 +1,118 @@
+.divbg {
+
+	max-height: 800px;
+	background: inherit;
+	background-color: rgba(255,255,255,.3);
+	backdrop-filter: blur(5px);
+	color: black;
+
+}
+
+
+
+.selectindilist {
+	max-height:500px;
+	overflow:auto;
+	max-width: 500px;
+}
+
+#index-build-tree {
+	margin-top: 20px;
+	background-color: black;
+
+	color: white;
+}
+
+button.index-highlighted {
+	background-color: var(--item-highlight-color);
+	color: white;
+	transition: background-color 0.1s, color 0.1s;
+}
+
+button.index-highlighted .index-list-card-born{
+
+	color: white;
+	transition: color 0.1s;
+}
+.index-search {
+	max-width: 500px;
+
+}
+
+button.selected{
+	background-color: var(--item-highlight-color);
+	color: white;
+}
+button.selected .index-list-card-born{
+	color: white;
+}
+
+.list-group-item {
+	transition: background-color 0.1s, color 0.1s;
+	color: black;
+}
+
+.index-list-card-born {
+	transition: color 0.1s;
+	font-size: 14px;
+	color: gray;
+}
+
+.container {
+	margin-top: 5%;
+}
+
+.tcolor {
+	color: black;
+}
+
+h1.display-4 {
+	font-weight: 550;
+}
+
+p.lead {
+	font-weight: 400;
+	font-size: 22px;
+}
+
+.body {
+
+    background: linear-gradient(142deg, #ff595e, #ffca3a, #1982c4, #5bcffa, #f5abb9) fixed;
+
+    background-size: 800% 1000%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    position: relative;
+    z-index: -2;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+#container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+
+}
+
+
+
+
+

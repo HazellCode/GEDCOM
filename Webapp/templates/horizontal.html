@@ -1,0 +1,47 @@
+{%  extends 'base.html' %}
+
+{%  block content %}
+
+    <div class="tree_content">
+        <script>
+            // ill fix this in a minute
+            if (!('indexedDB' in window)) {
+                console.log("This browser doesn't support IndexedDB");
+
+            }
+
+
+
+
+
+        </script>
+
+
+
+        <div id="page_content" class="container">
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="tree" id="family_tree">
+
+        </div>
+
+    </div>
+    <script src="../static/js/tree/treeUtils.js"></script>
+    <script src="../static/js/tree/displayTree.js"></script>
+
+
+
+
+
+
+{%  endblock %}

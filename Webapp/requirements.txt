@@ -1,0 +1,13 @@
+asgiref==3.5.2
+click==8.1.3
+dialite==0.5.3
+Django==4.0.5
+Flask==2.1.2
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.1
+pscript==0.7.7
+sqlparse==0.4.2
+tornado==6.1
+webruntime==0.5.8
+Werkzeug==2.1.2

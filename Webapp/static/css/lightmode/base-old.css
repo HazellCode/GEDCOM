@@ -1,0 +1,158 @@
+:root {
+    --item-highlight-color: #ff595e;
+}
+
+#match-list {
+    position: absolute;
+
+    max-height:  210px;
+
+    overflow: auto;
+    font-size: 1em;
+    z-index:2;
+
+}
+
+h4.cardmod {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.custom-popover {
+  --bs-popover-max-width: 400px;
+  --bs-popover-border-color: rgb(108,66,240);
+  --bs-popover-header-bg: rgb(108,66,240);
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 2rem;
+  --bs-popover-body-padding-y: .5rem;
+    --bs-popover-bg: rgb(70,70,70);
+}
+
+.popovercard {
+  text-align: left;
+    color: white;
+
+
+}
+.popovertext {
+
+  display: block;
+  font-weight: normal;
+}
+
+.popoverparent {
+  color: #888888;
+  list-style-type: '- ';
+
+}
+
+.popover-body{
+	max-height: 800px;
+	background: inherit;
+	background-color: rgba(255,255,255,.3);
+	backdrop-filter: blur(5px);
+	color: black;
+
+}
+
+#indi-search {
+    width: 100%;
+}
+
+.darkmodeswitch {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+
+.body {
+
+    background: linear-gradient(142deg, #ff595e, #ffca3a, #1982c4, #5bcffa, #f5abb9) fixed;
+    height: 100vh;
+    background-size: 800% 1000%;
+
+    -webkit-animation: AnimationName 22s ease infinite;
+    -moz-animation: AnimationName 22s ease infinite;
+    animation: AnimationName 22s ease infinite;
+    position: relative;
+    z-index: -2;
+
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+}
+
+
+
+
+
+
+
+
+.dmsel {
+    background-color: rgb(41,41,41);
+}
+.container-fluid, .navbar-brand,.nav-link,.nav-link.active{
+    color: white;
+}
+
+#page_content{
+    color: white;
+}
+
+
+
+.li {
+    background-color: rgb(70,70,70);
+    color: white;
+    font-size: 22px;
+}
+.highlighted {
+    background-color: rgb(108,66,240);
+}
+#dmodeswitch:before {
+  content: "Dark Mode";
+  display: inline;
+}
+
+.base-nav-custom {
+   background-color: white;
+}
+
+
+#dmodeswitch{
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.55);
+    border-width: 1px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: bold;
+
+}
+#baseNavbar {
+    top:0;
+
+    position: fixed;
+    width:100%;
+    z-index:0;
+}
+
+.nav_design_rounded {
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+

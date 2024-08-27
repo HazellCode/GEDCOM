@@ -1,0 +1,48 @@
+{%  extends 'base.html' %}
+
+{%  block content %}
+    <script src="../static/js/profile/profile.js"></script>
+    <script>
+        // inline tree otherwise known as mobile tree / individual profile
+        // we need to get data about the user from the server
+
+    </script>
+
+
+    <div class="profile-block">
+        <div class="image-container">
+            <img class="indi-image" src="https://dummyimage.com/150x150/000000/fff">
+            <div class="profile-details">
+                <div id="indi-target-name" class="pro-sub-detail indi-name"></div>
+                <div id="indi-target-born" class="pro-sub-detail indi-born"></div>
+                <div id="indi-target-death" class="pro-sub-detail indi-death"></div>
+            </div>
+
+        </div>
+        <hr>
+            <div class="profile-content container-fluid">
+                <div class="row">
+                    <div id="profile-content-parent-container" class="profile-content-style-endl col-4">
+                        <!-- Siblings -->
+                        <h3>Parents and Siblings</h3>
+                    </div>
+                    <div id="profile-content-facts-container" class="profile-content-style col-4">
+                        <!-- IDK yet  -->
+                        <h3>Facts </h3>
+                    </div>
+                    <div id="profile-content-spouce-container" class="profile-content-style-endr col-4">
+                        <!-- Children / Spouce -->
+                        <h3>Spouce and Children</h3>
+                    </div>
+                </div>
+
+
+            </div>
+        <hr>
+        <div id="profile-block-footer" class="profile-block-footer">
+
+        </div>
+    </div>
+{%  include 'footer.html' %}
+{%  endblock %}
+

@@ -1,0 +1,85 @@
+{%  extends 'base.html' %}
+
+{%  block content %}
+
+
+
+
+
+    <script>
+        fetch("/api/getIndividuals",{
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({"uuid":window.localStorage['indi_uuid']})
+
+            })
+                .then(res => res.json())
+                .then(data => {
+                    // If we have got back to this page we need to wipe the UUID in case the tree needs to be regenerated
+                    localStorage['tree_uuid'] = null
+                    if (data.data !== "_304") {
+                        if (data.status === "-1"){
+                            // Something done fucked up
+                            // There is no data in the server for it to send to the user
+                            // Display an error modal to the user and send them back to upload
+                        }
+                        window.localStorage.setItem('allindi',JSON.stringify(data.data))
+                        makeIndexList(" ")
+                    }
+                    // else {
+                    // There has been no change to the data and we can use whatever we already have
+                    // bear in mined this doesn't account for if the cache has been cleared since last reload so we need to try and send a guid to flask to check if they are the same
+                    // idk it could even be quicker to do a hash but that probably wont work as well as a guid get and post.
+                    // {
+
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+
+        function sendRootToFlask(id){
+                event.preventDefault()
+
+                window.localStorage['rootindi'] = id
+                window.location.href = "/tree?generation=5";
+
+        }
+    </script>
+
+    <div class="container mt-6">
+    <div class="mt-5 p-5 text-white rounded divbg">
+        <div class="row">
+        <div class="col">
+             <h1 class="display-4 tcolor">Individuals Found In GEDCOM</h1>
+             <p class="lead tcolor">Please select the individual you would like to be the root of the tree</p>
+            <div class="tcolor">
+                <hr>
+                <h2> Selected Individual</h2>
+                <h4 id="index-name-view"> Name: </h4>
+                <h4 id="index-id-view"> ID: </h4>
+            </div>
+        </div>
+        <div class="col">
+            <input class="form-control index-search"  placeholder="Enter A Name" id="index-search">
+            <div class="selectindilist">
+
+              <ul id="index-list" class="list-group">
+
+              </ul>
+            </div>
+        </div>
+            </div>
+
+    <a class="btn btn-lg buildtree-btn" href='#' role="button" id="index-build-tree">Build Tree</a>
+
+    </div>
+        </div>
+    <script src="../static/js/start/displayIndividualsFound.js"></script>
+    <script src="../static/js/start/index.js"></script>
+    <script>
+    $('#index-build-tree').click(function(){ sendRootToFlask(indexidview.textContent.substring(4)); return false; });
+    </script>
+    {% include 'footer.html' %}
+{%  endblock %}
